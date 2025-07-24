@@ -1,0 +1,68 @@
+-- =================================================================
+-- 20 SAMPLE RECORDS FOR THE 'friends' TABLE
+-- `num_of_friends` has been pre-calculated based on the `myfriends` table below.
+-- =================================================================
+
+INSERT INTO `friends` (`friend_email`, `password`, `profile_name`, `date_started`, `num_of_friends`) VALUES
+('shinichi.kudo@gmail.com', 'shinichi', 'Shinichi Kudo', '2025-07-23', 10),
+('ran.mouri@gmail.com', 'ranmouri', 'Ran Mouri', '2025-07-23', 6),
+('kogoro.mouri@gmail.com', 'kogoro', 'Kogoro Mouri', '2025-07-23', 3),
+('ai.haibara@gmail.com', 'aihaibara', 'Ai Haibara', '2025-07-23', 3),
+('heiji.hattori@gmail.com', 'heiji', 'Heiji Hattori', '2025-07-23', 3),
+('kazuha.toyama@gmail.com', 'kazuha', 'Kazuha Toyama', '2025-07-23', 3),
+('kaito.kuroba@gmail.com', 'kaitokid', 'Kaito Kuroba', '2025-07-23', 3),
+('sonoko.suzuki@gmail.com', 'sonoko', 'Sonoko Suzuki', '2025-07-23', 5),
+('makoto.kyogoku@gmail.com', 'makoto', 'Makoto Kyogoku', '2025-07-23', 1),
+('shuichi.akai@gmail.com', 'shuichi', 'Shuichi Akai', '2025-07-23', 3),
+('amuro.toru@gmail.com', 'amuro', 'Toru Amuro', '2025-07-23', 4),
+('jodie.starling@gmail.com', 'jodie', 'Jodie Starling', '2025-07-23', 4),
+('yusaku.kudo@gmail.com', 'yusaku', 'Yusaku Kudo', '2025-07-23', 3),
+('yukiko.kudo@gmail.com', 'yukiko', 'Yukiko Kudo', '2025-07-23', 3),
+('gin.blackorg@gmail.com', 'gin', 'Gin', '2025-07-23', 2),
+('vodka.blackorg@gmail.com', 'vodka', 'Vodka', '2025-07-23', 1),
+('vermouth.blackorg@gmail.com', 'vermouth', 'Vermouth', '2025-07-23', 3),
+('juzo.megure@gmail.com', 'juzo', 'Juzo Megure', '2025-07-23', 3),
+('wataru.takagi@gmail.com', 'takagi', 'Wataru Takagi', '2025-07-23', 3),
+('miwako.sato@gmail.com', 'sato', 'Miwako Sato', '2025-07-23', 4);
+
+-- =================================================================
+-- 35 SAMPLE RECORDS FOR THE 'myfriends' TABLE
+-- (Each friendship is stored only once)
+-- =================================================================
+
+INSERT INTO `myfriends` (`friend_id1`, `friend_id2`) VALUES
+(1, 2),   -- Shinichi & Ran
+(1, 4),   -- Shinichi & Ai
+(1, 5),   -- Shinichi & Heiji
+(1, 7),   -- Shinichi & Kaito
+(1, 8),   -- Shinichi & Sonoko
+(1, 10),  -- Shinichi & Akai
+(1, 11),  -- Shinichi & Amuro
+(1, 13),  -- Shinichi & Yusaku
+(1, 14),  -- Shinichi & Yukiko
+(1, 19),  -- Shinichi (Conan) & Takagi
+(2, 6),   -- Ran & Kazuha
+(2, 8),   -- Ran & Sonoko
+(2, 12),  -- Ran & Jodie
+(2, 17),  -- Ran & Vermouth
+(2, 20),  -- Ran & Sato
+(3, 11),  -- Kogoro & Amuro
+(3, 13),  -- Kogoro & Yusaku
+(3, 18),  -- Kogoro & Megure
+(4, 12),  -- Ai & Jodie
+(4, 20),  -- Ai & Sato
+(5, 6),   -- Heiji & Kazuha
+(5, 7),   -- Heiji & Kaito
+(6, 8),   -- Kazuha & Sonoko
+(8, 9),   -- Sonoko & Makoto
+(10, 11), -- Akai & Amuro
+(10, 12), -- Akai & Jodie
+(11, 12), -- Amuro & Jodie
+(13, 14), -- Yusaku & Yukiko
+(14, 17), -- Yukiko & Vermouth
+(15, 16), -- Gin & Vodka
+(15, 17), -- Gin & Vermouth
+(18, 19), -- Megure & Takagi
+(18, 20), -- Megure & Sato
+(19, 20), -- Takagi & Sato
+(7, 8);   -- Kaito & Sonoko

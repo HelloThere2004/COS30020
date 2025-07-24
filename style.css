@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    font-family: Helvetica, Arial;
+}
+
+body {
+    background-color: rgb(121, 121, 121);
+}
+
+header {
+    /* Bật Flexbox, các phần tử con (<nav> và <div>) sẽ tự động xếp ngang */
+    display: flex;
+
+    /* Đẩy các phần tử con về hai phía đối diện của header */
+    justify-content: space-between;
+
+    /* Căn giữa các phần tử con theo chiều dọc cho đẹp mắt */
+    align-items: center;
+
+    /* Các thuộc tính khác của bạn */
+    background-color: rgb(246, 255, 74);
+    padding: 0 10px; /* Thêm một chút khoảng đệm để không bị sát lề */
+}
+
+/* Đảm bảo nav không chiếm toàn bộ chiều rộng */
+nav {
+    display: flex; 
+    justify-content: space-evenly;
+    margin-left: 5%;
+    gap: 20px; 
+}
+
+.username-header {
+    margin-right: 20px; 
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(57, 57, 57);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: rgb(246, 255, 74);
+    background-color: rgb(107, 106, 106);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(247, 247, 247);
+    color: black;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+button
+/* Container for contents in pages */
+.index-content,
+.signup-content,
+.login-content,
+.friendlist-content {
+    margin: 70px auto;
+    width: 60%;
+    padding: 30px;
+    border: 4px solid black;
+    border-radius: 2%;
+    background-color: rgb(213, 213, 213);
+}
+
+/* Index page */
+.index-content h1 {
+    text-align: center;
+}
+
+.index-content table {
+    width: 80%
+}
+
+.db-error {
+    width: 80%;
+    margin: auto;
+    color: red;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: rgb(213, 213, 213);
+}
+
+
+/* Sign Up page */
+.signup-content h1 {
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+/* Sign In page */
+.login-content h1 {
+    text-align: center;
+}
+
+.login-button {
+    margin-top: 10px;
+}
+
+/* Friend List */
+.container-friend-boxes {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.friend-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 3px auto;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.friend-box:hover {
+    color: white;
+    background-color: rgb(68, 68, 68);
+}
+
+.friendlist-content h1, h2 {
+    text-align: center;
+}
+
+.addfriend-listfriend-changepage {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 20%;
+}
+
+.addfriend-listfriend-changepage:hover {
+    background-color: black;
+    color: white;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+.pagination a, .pagination strong {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+    background: #eee;
+}
+.pagination strong {
+    background: #333;
+    color: #fff;
+}
+.pagination a:hover {
+    background: #333;
+    color: #fff;
+}
