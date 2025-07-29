@@ -7,25 +7,27 @@ body {
     background-color: rgb(121, 121, 121);
 }
 
-header {
-    /* Bật Flexbox, các phần tử con (<nav> và <div>) sẽ tự động xếp ngang */
+#signed-in {
     display: flex;
 
-    /* Đẩy các phần tử con về hai phía đối diện của header */
     justify-content: space-between;
 
-    /* Căn giữa các phần tử con theo chiều dọc cho đẹp mắt */
     align-items: center;
 
-    /* Các thuộc tính khác của bạn */
     background-color: rgb(246, 255, 74);
-    padding: 0 10px; /* Thêm một chút khoảng đệm để không bị sát lề */
+    padding: 0 10px; 
 }
 
-/* Đảm bảo nav không chiếm toàn bộ chiều rộng */
+#no-signed-in {
+    align-items: center;
+
+    background-color: rgb(246, 255, 74);
+    padding: 0 10px; 
+}
+
 nav {
     display: flex; 
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-left: 5%;
     gap: 20px; 
 }
@@ -59,7 +61,7 @@ button:hover {
     background-color: rgb(68, 68, 68);
     color: white;
 }
-button
+
 /* Container for contents in pages */
 .index-content,
 .signup-content,

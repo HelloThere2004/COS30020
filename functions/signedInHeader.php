@@ -1,8 +1,8 @@
 <?php
     $profileName = $_SESSION["profileName"];
     echo 
-    "<header>
-        <nav>
+    "<header id='signed-in'>
+        <nav >
             <a href='index.php'>Homepage</a>
             <a href='friendList.php'>List of Friends</a>
             <a href='friendadd.php'>Add more Friends</a>
