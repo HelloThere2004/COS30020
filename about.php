@@ -45,6 +45,7 @@ session_start();
                 <ul>
                     <li>Improve UI/UX with more responsive design.</li>
                     <li>Refactor code for better reusability and maintainability.</li>
+                    <li>Use more advanced SQL commands to have better performance. Currently some feature takes a lot of time to run.</li>
                 </ul>
             </li>
             <li><strong>Additional features added:</strong>
